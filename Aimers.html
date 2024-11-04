@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protecting Life on Land – SDG 15</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Aimers.css"> <!-- Link to your CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery for dynamic effects -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">SDG 15</div>
+        <ul class="nav-links">
+            <li><a href="#about-sdg15">About</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#ngos">NGOs</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#take-action">Take Action</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dynamic Intro Section -->
+    <div class="intro-container" id="intro-container">
+        <!-- Animated Background -->
+        <div class="intro-background">
+            <div class="forest-layer"></div>
+            <div class="particles"></div>
+        </div>
+
+        <!-- Main Intro Content -->
+        <div class="intro-content">
+            <!-- Animated Logo -->
+            <div class="intro-logo">
+                <div class="earth-animation">
+                    <div class="earth-circle"></div>
+                    <i class="fas fa-globe-americas"></i>
+                    <div class="orbiting-leaf">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Text -->
+            <div class="intro-text">
+                <h1 class="glitch" data-text="SDG 15">SDG 15</h1>
+                <div class="typing-text">Protecting Life on Land</div>
+                
+                <!-- Dynamic Statistics -->
+                <div class="intro-stats">
+                    <div class="stat-counter">
+                        <div class="counter" data-target="15300000000">0</div>
+                        <span>Trees Cut Annually</span>
+                    </div>
+                    <div class="stat-counter">
+                        <div class="counter" data-target="1000000">0</div>
+                        <span>Species at Risk</span>
+                    </div>
+                    <div class="stat-counter">
+                        <div class="counter" data-target="137">0</div>
+                        <span>Species Lost Daily</span>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="intro-cta">
+                    <button class="explore-btn" id="explore-btn">
+                        <span>Explore Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-scroll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-text">Protecting Life on Land</h1>
+            <p class="fade-in">Sustainable Development Goal 15</p>
+            <div class="hero-buttons">
+                <a href="#about-sdg15" class="btn scroll-to-section">Learn More</a>
+                <a href="#take-action" class="btn btn-outline scroll-to-section">Take Action</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Goals Section -->
+    <section id="goals" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Key Targets</h2>
+            <div class="goals-grid">
+                <div class="goal-card fade-in-up">
+                    <i class="fas fa-tree"></i>
+                    <h3>Forest Protection</h3>
+                    <p>Ensure conservation and sustainable use of forests.</p>
+                </div>
+                <div class="goal-card fade-in-up">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Biodiversity Conservation</h3>
+                    <p>Protect and restore terrestrial and freshwater ecosystems.</p>
+                </div>
+                <div class="goal-card fade-in-up">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Sustainable Land Management</h3>
+                    <p>Combat desertification and restore degraded land.</p>
+                </div>
+                <!-- Add more goal cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- NGO Section -->
+    <section id="ngos" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Environmental Organizations</h2>
+            <div class="ngo-grid">
+                <div class="ngo-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="WWF India">
+                    <div class="ngo-content">
+                        <h3>WWF India</h3>
+                        <p>Working towards wildlife conservation and reducing human impact on the environment.</p>
+                        <a href="https://www.wwfindia.org/" target="_blank" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="ngo-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1601607261863-2a6a7336f8f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Greenpeace">
+                    <div class="ngo-content">
+                        <h3>Greenpeace</h3>
+                        <p>Global campaigning organization that acts to change attitudes and behavior, to protect and conserve the environment.</p>
+                        <a href="https://www.greenpeace.org/" target="_blank" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <!-- Add more NGO cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About SDG 15 Section -->
+    <section id="about-sdg15" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About SDG 15</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sustainable Development Goal 15 focuses on "Life on Land" - one of the 17 SDGs established by the United Nations in 2015. The goal aims to protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, halt and reverse land degradation, and stop biodiversity loss.</p>
+                </div>
+                <div class="key-numbers">
+                    <div class="number-card">
+                        <h3>12</h3>
+                        <p>Targets to achieve by 2030</p>
+                    </div>
+                    <div class="number-card">
+                        <h3>14</h3>
+                        <p>Indicators to measure progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Targets Section -->
+    <section id="targets" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">THE TARGETS</h2>
+            <p class="section-subtitle">Everyone can help to make sure that we meet the Global Goals. Use these twelve targets to create action to protect and restore life on land.</p>
+            
+            <div class="targets-grid">
+                <!-- Target 15.1 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_5d08ea5a-c0b5-49a4-993d-40bd2f3d46f9_goal_15.1_rgb_ng.svg" alt="Target 15.1">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.1 CONSERVE AND RESTORE TERRESTRIAL AND FRESHWATER ECOSYSTEMS</h3>
+                        <p>By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements.</p>
+                        <div class="translations">
+                            <div class="translation fr">
+                                <p>Préserver et restaurer les écosystèmes terrestr...</p>
+                            </div>
+                            <div class="translation es">
+                                <p>Gestionar sosteniblemente los bosques...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target 15.2 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_2d7c3a6c-410f-4559-9653-b0f67d6b8184_goal_15.2_rgb_ng.svg" alt="Target 15.2">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.2 END DEFORESTATION AND RESTORE DEGRADED FORESTS</h3>
+                        <p>By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.3 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_8cbc14b6-8735-4284-9ce1-4061f804b644_goal_15.3_rgb_ng.svg" alt="Target 15.3">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.3 END DESERTIFICATION AND RESTORE DEGRADED LAND</h3>
+                        <p>By 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.4 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_c4c086bd-06c7-495f-a743-4ebd0f228ee1_goal_15.4_rgb_ng.svg" alt="Target 15.4">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.4 ENSURE CONSERVATION OF MOUNTAIN ECOSYSTEMS</h3>
+                        <p>By 2030, ensure the conservation of mountain ecosystems, including their biodiversity, to enhance their capacity to provide benefits essential for sustainable development.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.5 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_675a6237-f33f-42b2-9e76-21fd53e22e93_goal_15.5_rgb_ng.svg" alt="Target 15.5">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.5 PROTECT BIODIVERSITY AND NATURAL HABITATS</h3>
+                        <p>Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and protect and prevent the extinction of threatened species.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.6 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_321848c4-1853-4f19-a996-0f81cb002458_goal_15.6_rgb_ng.svg" alt="Target 15.6">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.6 PROMOTE ACCESS TO GENETIC RESOURCES AND FAIR SHARING OF THE BENEFITS</h3>
+                        <p>Promote fair and equitable sharing of the benefits arising from the utilization of genetic resources and promote appropriate access to such resources.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.7 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_d44e67bd-fb66-4283-8b80-8f0fd1b06438_goal_15.7_rgb_ng.svg" alt="Target 15.7">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.7 ELIMINATE POACHING AND TRAFFICKING OF PROTECTED SPECIES</h3>
+                        <p>Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.8 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_d7811258-202d-46a4-84b6-5bb4b11fab59_goal_15.8_rgb_ng.svg" alt="Target 15.8">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.8 PREVENT INVASIVE ALIEN SPECIES ON LAND AND IN WATER ECOSYSTEMS</h3>
+                        <p>By 2020, introduce measures to prevent the introduction and significantly reduce the impact of invasive alien species on land and water ecosystems.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.9 -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_4873dc0f-0980-46f0-8186-a4a6b3d9e693_goal_15.9_rgb_ng.svg" alt="Target 15.9">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.9 INTEGRATE ECOSYSTEM AND BIODIVERSITY IN GOVERNMENTAL PLANNING</h3>
+                        <p>By 2020, integrate ecosystem and biodiversity values into national and local planning, development processes, and poverty reduction strategies.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.A -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_4994ddd6-6ba4-43d6-936f-2eb42519ea58_goal_15.a_rgb_ng.svg" alt="Target 15.A">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.A INCREASE FINANCIAL RESOURCES</h3>
+                        <p>Mobilize and significantly increase financial resources from all sources to conserve and sustainably use biodiversity and ecosystems.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.B -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_e7fb9602-9f4c-4e29-b551-b5f1e6a5566d_goal_15.b_rgb_ng.svg" alt="Target 15.B">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.B FINANCE AND INCENTIVIZE SUSTAINABLE FOREST MANAGEMENT</h3>
+                        <p>Mobilize significant resources to finance sustainable forest management and provide adequate incentives to developing countries to advance such management.</p>
+                    </div>
+                </div>
+
+                <!-- Target 15.C -->
+                <div class="target-card fade-in-up">
+                    <div class="target-icon">
+                        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_016f5cce-91a0-4be7-895a-50b5bf583de4_goal_15.c_rgb_ng.svg" alt="Target 15.C">
+                    </div>
+                    <div class="target-content">
+                        <h3>15.C COMBAT GLOBAL POACHING AND TRAFFICKING</h3>
+                        <p>Enhance global support for efforts to combat poaching and trafficking of protected species, including by increasing the capacity of local communities to pursue sustainable livelihood opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Progress & Challenges</h2>
+            <div class="progress-content">
+                <div class="progress-chart">
+                    <!-- Add interactive charts here -->
+                </div>
+                <div class="challenges">
+                    <h3>Current Challenges</h3>
+                    <ul>
+                        <li>$700 billion gap in financial support for low-income countries</li>
+                        <li>Increased deforestation during COVID-19 pandemic</li>
+                        <!-- Add more challenges -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Action Section -->
+    <section id="take-action" class="section action-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Take Action Now</h2>
+            <div class="action-grid">
+                <div class="action-card fade-in-up">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Donate</h3>
+                    <p>Support conservation efforts.</p>
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+                <div class="action-card fade-in-up">
+                    <i class="fas fa-paper-plane"></i>
+                    <h3>Volunteer</h3>
+                    <p>Join local conservation projects.</p>
+                    <a href="#" class="btn">Get Involved</a>
+                </div>
+                <div class="action-card fade-in-up">
+                    <i class="fas fa-comments"></i>
+                    <h3>Spread Awareness</h3>
+                    <p>Share information about SDG 15.</p>
+                    <a href="#" class="btn">Learn How</a>
+                </div>
+                <!-- Add more action cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources-section">
+        <div class="container">
+            <h2 class="section-title fade-in">RESOURCES</h2>
+            <p class="section-subtitle">Explore these resources to learn more about Life on Land and take action.</p>
+
+            <div class="resources-grid">
+                <!-- Reports & Publications -->
+                <div class="resource-card fade-in-up">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Reports & Publications</h3>
+                    <ul class="resource-list">
+                        <li><a href="#" target="_blank">UN Biodiversity Report 2023</a></li>
+                        <li><a href="#" target="_blank">Global Forest Resources Assessment</a></li>
+                        <li><a href="#" target="_blank">State of World's Forests Report</a></li>
+                        <li><a href="#" target="_blank">Land Degradation Neutrality Report</a></li>
+                    </ul>
+                </div>
+
+                <!-- Educational Materials -->
+                <div class="resource-card fade-in-up">
+                    <div class="resource-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Educational Materials</h3>
+                    <ul class="resource-list">
+                        <li><a href="#" target="_blank">Biodiversity Teaching Guide</a></li>
+                        <li><a href="#" target="_blank">Forest Conservation Toolkit</a></li>
+                        <li><a href="#" target="_blank">Wildlife Protection Resources</a></li>
+                        <li><a href="#" target="_blank">Ecosystem Learning Materials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Data & Statistics -->
+                <div class="resource-card fade-in-up">
+                    <div class="resource-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data & Statistics</h3>
+                    <ul class="resource-list">
+                        <li><a href="#" target="_blank">Global Biodiversity Database</a></li>
+                        <li><a href="#" target="_blank">Deforestation Statistics</a></li>
+                        <li><a href="#" target="_blank">Species Extinction Data</a></li>
+                        <li><a href="#" target="_blank">Conservation Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Applications -->
+                <div class="resource-card fade-in-up">
+                    <div class="resource-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Applications</h3>
+                    <ul class="resource-list">
+                        <li><a href="#" target="_blank">Forest Monitoring App</a></li>
+                        <li><a href="#" target="_blank">Biodiversity Mapping Tool</a></li>
+                        <li><a href="#" target="_blank">Species Identification Guide</a></li>
+                        <li><a href="#" target="_blank">Conservation Planning Software</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Resources -->
+            <div class="additional-resources">
+                <h3>Partner Organizations</h3>
+                <div class="partner-logos">
+                    <a href="https://www.iucn.org/" target="_blank"><img src="https://www.greenclimate.fund/sites/default/files/organisation/logo-iucn.png" alt="IUCN"></a>
+                    <a href="https://www.worldwildlife.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/1200px-WWF_logo.svg.png" alt="WWF"></a>
+                    <a href="https://www.unep.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/UNEP_logo.svg/1200px-UNEP_logo.svg.png" alt="UNEP"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title fade-in">REVIEWS</h2>
+            <p class="section-subtitle">Share your thoughts with us!</p>
+
+            <div class="review-form">
+                <input type="text" id="reviewerName" placeholder="Your Name" required>
+                <textarea id="reviewText" placeholder="Write your review here..." required></textarea>
+                <button id="submitReview">Submit Review</button>
+            </div>
+
+            <div id="reviewList" class="review-list">
+                <!-- Reviews will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title fade-in">CONTACT US</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+            <p>Check out our design resources on <a href="https://www.canva.com/design/DAGLp1Ifcbc/dH7IpEt_94Ty0tje3mGjwQ/view?utm_content=DAGLp1Ifcbc&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Canva</a>.</p>
+            <!-- Other contact details -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> aimers294@gmail.com/p>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Aimers" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/Aimers" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/Aimers" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="Aimers.js"></script> <!-- Link to your JavaScript file -->
+
+</body>
+</html>

@@ -1,0 +1,743 @@
+/* Updated General Styles */
+:root {
+    --primary-color: #3f9c35; /* Primary color */
+    --secondary-color: #2c701f; /* Secondary color */
+    --text-color: #333; /* General text color */
+    --light-bg: #f8f9fa; /* Light background color */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+    line-height: 1.6; /* Line height */
+    background-color: var(--light-bg); /* Background color */
+    color: var(--text-color); /* Text color */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed; /* Fixed navbar */
+    width: 100%; /* Full width */
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+    padding: 1rem 2rem; /* Padding */
+    z-index: 1000; /* Stacking order */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center alignment */
+}
+
+.nav-logo {
+    font-size: 1.5rem; /* Logo font size */
+    font-weight: bold; /* Bold text */
+    color: var(--primary-color); /* Logo color */
+}
+
+.nav-links {
+    display: flex; /* Flexbox layout */
+    gap: 2rem; /* Space between links */
+    list-style: none; /* No list style */
+}
+
+.nav-links a {
+    color: var(--text-color); /* Link color */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); /* Hover color */
+}
+
+/* Updated Pop-up Styles */
+.intro-popup {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for popup */
+}
+
+.popup-content {
+    background: white; /* White background */
+    padding: 2rem; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px; /* Max width */
+    margin: 2rem auto; /* Centered margin */
+    color: var(--text-color); /* Text color */
+}
+
+.popup-stats {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space between stats */
+    margin: 2rem 0; /* Margin */
+}
+
+.stat-item {
+    text-align: center; /* Center alignment */
+}
+
+.stat-item i {
+    font-size: 2rem; /* Icon size */
+    color: var(--primary-color); /* Icon color */
+}
+
+/* Updated Hero Styles */
+.hero {
+    position: relative; /* Relative positioning */
+    background-size: cover; /* Cover background */
+    background-position: center; /* Centered background */
+    background-attachment: fixed; /* Fixed background attachment */
+}
+
+.hero-overlay {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Top alignment */
+    left: 0; /* Left alignment */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative; /* Relative positioning */
+    z-index: 1; /* Stacking order */
+    padding: 0 1rem; /* Padding */
+}
+
+/* Card Styles */
+.goals-grid,
+.ngo-grid,
+.action-grid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Gap between cards */
+    padding: 2rem 0; /* Padding */
+}
+
+.goal-card,
+.ngo-card,
+.action-card {
+    background: white; /* White background */
+    padding: 2rem; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Transform effect */
+}
+
+.goal-card:hover,
+.ngo-card:hover,
+.action-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0; /* Initial opacity */
+    transform: translateY(20px); /* Initial position */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transition effects */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+.fade-in-up {
+    opacity: 0; /* Initial opacity */
+    transform: translateY(40px); /* Initial position */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Transition effects */
+}
+
+.fade-in-up.visible-up {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Updated Footer Styles */
+footer {
+    background: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 3rem 0 1rem; /* Padding */
+}
+
+.footer-content {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Gap between footer items */
+    max-width: 1200px; /* Max width */
+    margin: 0 auto; /* Centered margin */
+    padding: 0 2rem; /* Padding */
+}
+
+.social-links {
+    display: flex; /* Flexbox layout */
+    gap: 1rem; /* Space between social links */
+}
+
+.social-links a {
+    font-size: 1.5rem; /* Link font size */
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.social-links a:hover {
+    color: var(--primary-color); /* Hover color */
+}
+
+/* Intro Section Styles */
+.intro-container {
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    position: relative; /* Relative positioning */
+    overflow: hidden; /* Hidden overflow */
+    background: linear-gradient(135deg, #1a472a, #2d5a27); /* Gradient background */
+}
+
+/* Animated Background */
+.intro-background {
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.forest-layer {
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Bottom alignment */
+    width: 100%; /* Full width */
+    height: 30%; /* Height of layer */
+    background: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1950&q=80') repeat-x; /* Background image */
+    background-size: contain; /* Contain background image */
+    animation: forestMove 20s linear infinite; /* Animation */
+}
+
+.particles {
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: radial-gradient(circle, transparent 20%, #1a472a 80%); /* Radial gradient */
+    animation: particlesFade 3s ease-in-out infinite; /* Animation */
+}
+
+/* Logo Animation */
+.intro-logo {
+    position: relative; /* Relative positioning */
+    width: 150px; /* Logo width */
+    height: 150px; /* Logo height */
+    margin: 0 auto 2rem; /* Centered margin */
+}
+
+.earth-animation {
+    position: relative; /* Relative positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    animation: float 6s ease-in-out infinite; /* Animation */
+}
+
+.earth-circle {
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Border */
+    border-radius: 50%; /* Circular shape */
+    animation: rotate 20s linear infinite; /* Animation */
+}
+
+.orbiting-leaf {
+    position: absolute; /* Absolute positioning */
+    top: -20px; /* Positioning */
+    left: 50%; /* Centered alignment */
+    transform-origin: 0 85px; /* Transformation origin */
+    animation: orbit 8s linear infinite; /* Animation */
+}
+
+.orbiting-leaf i {
+    color: #4CAF50; /* Leaf color */
+    font-size: 24px; /* Icon size */
+    animation: leafRotate 8s linear infinite; /* Animation */
+}
+
+/* Glitch Text Effect */
+.glitch {
+    font-size: 5rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    position: relative; /* Relative positioning */
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                 0.025em 0.04em 0 #fffc00; /* Text shadow */
+    animation: glitch 725ms infinite; /* Animation */
+}
+
+.glitch span {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Top alignment */
+    left: 0; /* Left alignment */
+}
+
+/* Typing Text */
+.typing-text {
+    font-size: 2rem; /* Font size */
+    margin: 1rem 0; /* Margin */
+    border-right: 0.15em solid #4CAF50; /* Cursor effect */
+    white-space: nowrap; /* No line breaks */
+    overflow: hidden; /* Hidden overflow */
+    animation: typing 3.5s steps(30, end), /* Typing animation */
+               blink-caret 0.75s step-end infinite; /* Blinking cursor */
+}
+
+/* Statistics Counter */
+.intro-stats {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space between stats */
+    margin: 2rem 0; /* Margin */
+}
+
+.stat-counter {
+    text-align: center; /* Center alignment */
+    color: white; /* White text */
+}
+
+.counter {
+    font-size: 2.5rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 0.5rem; /* Margin */
+}
+
+/* Call to Action Button */
+.explore-btn {
+    padding: 1rem 2rem; /* Padding */
+    font-size: 1.2rem; /* Font size */
+    background: transparent; /* Transparent background */
+    border: 2px solid #4CAF50; /* Border */
+    color: white; /* Text color */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease; /* Transition effects */
+    overflow: hidden; /* Hidden overflow */
+    position: relative; /* Relative positioning */
+}
+
+.explore-btn:hover {
+    background: #4CAF50; /* Background on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.explore-btn i {
+    margin-left: 10px; /* Margin */
+    transition: transform 0.3s ease; /* Transition effect */
+}
+
+.explore-btn:hover i {
+    transform: translateX(5px); /* Icon movement on hover */
+}
+
+/* Add these image URLs to your CSS */
+.target-card {
+    /* Forest Conservation */
+    background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09');
+    
+    /* Biodiversity */
+    background-image: url('https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f');
+    
+    /* Desert & Land */
+    background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35');
+    
+    /* Mountain Ecosystems */
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b');
+    
+    /* Wildlife Protection */
+    background-image: url('https://images.unsplash.com/photo-1534567153574-2b12153a87f0');
+}
+
+/* Add these new styles */
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.key-numbers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.number-card {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.targets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.target-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.target-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.target-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Updated Target Section Styles */
+.targets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.target-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.target-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.target-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.target-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.target-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.target-card p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Animation Classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add these new styles to your existing CSS file */
+
+/* Targets Section Styles */
+.targets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.target-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.target-card:hover {
+    transform: translateY(-5px);
+}
+
+.target-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.target-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.target-content h3 {
+    color: #105702;  /* Dark green color for headings */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;  /* Make headings bolder */
+}
+
+.target-content p {
+    color: #FFD700;  /* Changed to golden yellow */
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;  /* Added slightly bolder font weight for better visibility */
+}
+
+.translations {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #FFD700;  /* Changed to yellow */
+}
+
+.translation {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #FFD700;  /* Changed to yellow */
+}
+
+/* Animation classes (if not already present) */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .targets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .target-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Optional: Adjust hover state for better contrast */
+.target-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #105702;  /* Dark green background on hover */
+}
+
+.target-card:hover .target-content h3 {
+    color: #FFD700;  /* Change heading to yellow on hover */
+}
+
+/* Add these new styles for the Resources section */
+
+.resources-section {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resource-icon {
+    font-size: 2.5rem;
+    color: #105702;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resource-card h3 {
+    color: #105702;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-list li {
+    margin-bottom: 0.8rem;
+}
+
+.resource-list a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.resource-list a:hover {
+    color: #105702;
+}
+
+.additional-resources {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.partner-logos img {
+    max-height: 60px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.partner-logos img:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-logos {
+        gap: 1rem;
+    }
+
+    .partner-logos img {
+        max-height: 40px;
+    }
+}
+
+/* Add these new styles for the Reviews section */
+
+.reviews-section {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+}
+
+.review-form {
+    margin-bottom: 2rem;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    background-color: #105702;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #0d4e00;
+}
+
+.review-list {
+    margin-top: 2rem;
+}
+
+.review-item {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h4 {
+    margin: 0 0 0.5rem;
+    color: #105702;
+}
+
+.review-item p {
+    margin: 0;
+    color: #333;
+}
+
+/* Add these styles for the social media section */
+
+.social-media-section {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #105702; /* Change to your desired color */
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Change to your desired hover color */
+}
